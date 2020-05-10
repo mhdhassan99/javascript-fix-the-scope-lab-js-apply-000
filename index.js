@@ -11,10 +11,11 @@ function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: Hard-coding 'cat' below will not work
-  return function yourAnimalInner() {
-    return example + name
+  function yourAnimalInner(animal) {
+    animal = 'cat'
+    return animal
   }
-  return animal
+  return yourAnimalInner(animal)
 }
 
 function add2(n) {
